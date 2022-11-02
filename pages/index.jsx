@@ -1,13 +1,10 @@
 import Image from 'next/image';
 
-// Images
-import mainImage from '../public/paintings/richmond.png';
-
 export default function Home() {
 	return (
-		<div className="max-w-screen-2xl m-auto px-4 md:px-8 min-h-screen">
+		<div className="min-h-screen">
 			<div className="intro">
-				<h1 className="text-[75px] md:text-[160px] lg:text-[130px] xl:text-[180px] font-semibold leading-[80%] z-20 absolute top-[82px] md:top-[92px] lg:top-[135px] xl:top-16 z-20">
+				<h1 className="text-[75px] md:text-[160px] lg:text-[130px] xl:text-[180px] font-semibold leading-[80%] z-20 absolute top-[100px] md:top-[110px] lg:top-[143px] xl:top-[72px] z-20">
 					Bert
 					<br />
 					Wright

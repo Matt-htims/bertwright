@@ -1,12 +1,17 @@
 // Components
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Popup from '../blocks/Popup';
 
 export default function Layout({ children }) {
 	return (
 		<div className="bg-white">
+			<Popup />
+
 			<Navbar />
-			<main>{children}</main>
+			<div className="container max-w-screen-2xl m-auto px-4 md:px-8">
+				<main>{children}</main>
+			</div>
 			<Footer />
 		</div>
 	);

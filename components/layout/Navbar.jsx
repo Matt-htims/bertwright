@@ -23,6 +23,10 @@ export default function Navbar() {
 		} else {
 			setOnHome(false);
 		}
+
+		if (windowDimensions.width > 1250) {
+			setOpen(false);
+		}
 	});
 
 	function handleTray() {
@@ -61,7 +65,7 @@ export default function Navbar() {
 				} `}
 			>
 				<nav
-					className={`transition z-40 h-[68px] w-full max-w-screen-2xl m-auto px-4 md:px-8 bg-white ${checkPageAndScroll(
+					className={`transition max-w-screen-2xl m-auto px-4 md:px-8 z-40 h-[68px] w-full bg-white ${checkPageAndScroll(
 						'after:block after:h-px after:w-full after:bg-black'
 					)}`}
 				>
