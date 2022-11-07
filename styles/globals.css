@@ -26,7 +26,7 @@ h1,
 	font-family: var(--accentFont);
 	font-size: 80px;
 	line-height: 90px;
-	letter-spacing: -3%;
+	letter-spacing: -2.4px;
 	font-weight: 500;
 }
 
@@ -34,8 +34,8 @@ h2,
 .as-h2 {
 	font-family: var(--mainFont);
 	font-size: 55px;
-	line-height: 62px;
-	letter-spacing: -3%;
+	line-height: 66px;
+	letter-spacing: -1px;
 	font-weight: 500;
 }
 
