@@ -9,7 +9,7 @@ export default function Popup() {
 		return '';
 	}
 	return (
-		<div className="w-full bg-main py-3 fixed top-0 z-50">
+		<div className="w-full bg-main py-3 fixed hidden lg:block top-0 z-50">
 			<div className="max-w-screen-2xl m-auto px-4 md:px-8 flex justify-between">
 				<div className="w-7"></div>
 				<p className="text-white text-center">

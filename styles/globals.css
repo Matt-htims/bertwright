@@ -9,14 +9,15 @@
 	--mainFont: 'Poppins', sans-serif;
 
 	/* Colours */
-	--black: #181715;
-	--white: #fdfeff;
+	--black: #2b2926;
+	--white: #f8f8f8;
 	--main: #2a424f;
 }
 
 html,
 body {
 	font-family: var(--mainFont);
+	background-color: var(--white);
 	color: var(--black);
 }
 

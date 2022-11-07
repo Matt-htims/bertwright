@@ -11,8 +11,9 @@ export default function Layout({ children }) {
 			<Navbar />
 			<div className="container max-w-screen-2xl m-auto px-4 md:px-8">
 				<main>{children}</main>
+
+				<Footer />
 			</div>
-			<Footer />
 		</div>
 	);
 }
