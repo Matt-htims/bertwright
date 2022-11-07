@@ -24,26 +24,32 @@ body {
 h1,
 .as-h1 {
 	font-family: var(--accentFont);
-	font-size: 90px;
-	line-height: 90%;
+	font-size: 80px;
+	line-height: 90px;
+	letter-spacing: -3%;
+	font-weight: 500;
 }
 
-/* h2,
+h2,
 .as-h2 {
-	font-family: var(--accentFont);
-	font-size: 50px;
-	line-height: 42px;
+	font-family: var(--mainFont);
+	font-size: 55px;
+	line-height: 62px;
+	letter-spacing: -3%;
+	font-weight: 500;
 }
 
 h3,
 .as-h3 {
 	font-family: var(--accentFont);
-	font-size: 38px;
-	line-height: 32px;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 500;
 }
 
 p {
 	font-family: var(--mainFont);
 	font-size: 18px;
-	line-height: 190%;
-} */
+	line-height: 35px;
+	font-weight: 300;
+}
