@@ -2,7 +2,11 @@ import React from 'react';
 
 export default function Text({ title, body, leftAligned = true, h1 = false }) {
 	return (
-		<section className="lg:w-9/12 border-t border-b border-tertiary my-10 md:my-14 py-8 md:py-12">
+		<section
+			className={`lg:w-9/12 border-t border-b border-tertiary my-10 md:my-14 py-8 md:py-12 ${
+				!leftAligned ? 'ml-auto' : ''
+			}`}
+		>
 			{h1 ? (
 				<h1 className="mb-10">{title}</h1>
 			) : (
