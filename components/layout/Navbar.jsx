@@ -64,12 +64,8 @@ export default function Navbar() {
 					onHome && scrollPosition < scrollAim && !open ? 'z-20' : 'z-50'
 				} `}
 			>
-				<nav
-					className={`transition max-w-screen-2xl m-auto px-4 md:px-8 z-40 h-[68px] w-full bg-white ${checkPageAndScroll(
-						'after:block after:h-px after:w-full after:bg-black'
-					)}`}
-				>
-					<div className="flex justify-between items-center py-4 h-[68px]">
+				<nav className={`transition  z-40 h-[68px] w-full bg-white `}>
+					<div className="max-w-screen-2xl m-auto px-4 md:px-8 flex justify-between items-center py-4 h-[68px]">
 						<Link
 							href="/"
 							passHref={true}
