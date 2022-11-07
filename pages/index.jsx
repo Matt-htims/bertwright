@@ -1,5 +1,8 @@
 import Image from 'next/image';
 
+// Components
+import Text from '../components/blocks/Text';
+
 export default function Home() {
 	return (
 		<div className="min-h-screen">
@@ -18,7 +21,14 @@ export default function Home() {
 					/>
 				</div>
 			</div>
-			<h1>hello</h1>
+			<Text
+				title="Hello there you stinky"
+				body={[
+					'hehlekfhsoeifjselk sjef ios ejfoise hfoiseihf osefh seofih asef',
+					'lasjdkfowia ejfoiewfj woeaifj owesifj oaseifj weoifj weoifj weofjwefoi wejfowe fj',
+					'fjowief mwoefij weoifj qweiopfj weiofj woepifj weofi j',
+				]}
+			/>
 		</div>
 	);
 }
