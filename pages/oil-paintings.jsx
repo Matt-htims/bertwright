@@ -3,7 +3,7 @@ import Text from '../components/blocks/Text';
 
 export default function oilPaintings() {
 	return (
-		<div>
+		<div className="min-h-screen mt-0 md:my-24">
 			<Text
 				title="Oil Paintings"
 				body={[

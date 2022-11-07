@@ -18,7 +18,9 @@ export default function Text({ title, body, leftAligned = true, h1 = false }) {
 			)}
 			<div className="body md:text-justify">
 				{body.map((text) => (
-					<p className="my-4">{text}</p>
+					<p className="my-4 text-base md:text-lg leading-loose md:leading-loose">
+						{text}
+					</p>
 				))}
 			</div>
 		</section>
