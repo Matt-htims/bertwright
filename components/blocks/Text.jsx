@@ -8,7 +8,9 @@ export default function Text({ title, body, leftAligned = true, h1 = false }) {
 			}`}
 		>
 			{h1 ? (
-				<h1 className="mb-10">{title}</h1>
+				<h1 className="mb-5 md:mb-10 leading-tight md:leading-[1.2] lg:leading-[1.2] text-5xl md:text-7xl lg:text-7xl">
+					{title}
+				</h1>
 			) : (
 				<h2 className="mb-5 md:mb-10 leading-tight md:leading-[1.2] lg:leading-[1.2] text-3xl md:text-4xl lg:text-6xl">
 					{title}

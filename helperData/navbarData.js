@@ -8,7 +8,6 @@ export const navbarData = {
 		},
 		{ title: 'Oil Paintings', url: '/oil-paintings', id: '2803fjlsk' },
 		{ title: 'Limited Editions', url: '/limited-editions', id: '0293jflkj' },
-		{ title: 'News', url: '/news', id: 'j0f23jfkl' },
 		{ title: 'Contact', url: '/contact', id: '208j3f09j' },
 	],
 };

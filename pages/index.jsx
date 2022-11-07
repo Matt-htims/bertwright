@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<div className="min-h-screen">
 			<section className="intro">
-				<h1 className="text-[75px] md:text-[160px] lg:text-[130px] xl:text-[180px] font-semibold leading-[80%] z-20 absolute top-[100px] md:top-[110px] lg:top-[143px] xl:top-[72px] z-20">
+				<h1 className="text-[75px] md:text-[160px] lg:text-[130px] xl:text-[180px] font-semibold leading-[80%] z-20 absolute top-[95px] md:top-[105px] lg:top-[139px] xl:top-[70px] z-20">
 					Bert
 					<br />
 					Wright

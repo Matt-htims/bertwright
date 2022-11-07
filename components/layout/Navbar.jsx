@@ -58,14 +58,14 @@ export default function Navbar() {
 
 	return (
 		<>
-			{onHome ? <div className="lg:h-64"></div> : ''}
+			{onHome ? <div className="lg:h-60"></div> : ''}
 			<header
 				className={`sticky top-0 w-full ${
 					onHome && scrollPosition < scrollAim && !open ? 'z-20' : 'z-50'
 				} `}
 			>
-				<nav className={`transition  z-40 h-[68px] w-full bg-white `}>
-					<div className="max-w-screen-2xl m-auto px-4 md:px-8 flex justify-between items-center py-4 h-[68px]">
+				<nav className={`transition z-40 w-full bg-white `}>
+					<div className="max-w-screen-2xl m-auto px-4 md:px-8 flex justify-between items-center py-10 h-[68px]">
 						<Link
 							href="/"
 							passHref={true}
@@ -102,7 +102,7 @@ export default function Navbar() {
 						</button>
 					</div>
 				</nav>
-				{onHome ? <div className="h-32 md:h-64 mt-2 lg:hidden"></div> : ''}
+				{onHome ? <div className="h-28 md:h-60 mt-2 lg:hidden"></div> : ''}
 				<div
 					onClick={handleTray}
 					className={`w-full h-screen bg-main flex justify-center absolute top-0 z-40 overflow-hidden ${
