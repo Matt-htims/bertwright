@@ -1,19 +1,17 @@
 import Image from 'next/image';
 
-export default function Gallery({ data }) {
+// Components
+import GalleryImage from './GalleryImage';
+
+export default function Gallery({ data, newPaintingHandler }) {
 	return (
-		<div>
-			{data.map((painting) => (
-				<div key={painting.title}>
-					<Image
-						src={painting.src}
-						width="1000"
-						height="1000"
-						alt={painting.title}
-					/>
-					<h3>{painting.title}</h3>
-					<p>{painting.description}</p>
-				</div>
+		<div className="md:columns-2 gap-8">
+			{data.map((painting, index) => (
+				<GalleryImage
+					key={index}
+					painting={painting}
+					newPaintingHandler={newPaintingHandler}
+				/>
 			))}
 		</div>
 	);
