@@ -1,5 +1,9 @@
 // Components
 import Text from '../components/blocks/Text';
+import Gallery from '../components/blocks/Gallery';
+
+// Painting data
+import { watercolourPaintingsData } from '../helperData/paintingData';
 
 export default function oilPaintings() {
 	return (
@@ -12,6 +16,7 @@ export default function oilPaintings() {
 				]}
 				h1={true}
 			/>
+			<Gallery data={watercolourPaintingsData} />
 		</div>
 	);
 }

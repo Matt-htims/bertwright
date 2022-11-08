@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-export default function GalleryImage({ painting, newPaintingHandler }) {
+export default function GalleryImage({ painting }) {
 	return (
-		<div onClick={() => newPaintingHandler(painting)}>
+		<div>
 			<Image
 				src={painting.src}
 				width="1000"

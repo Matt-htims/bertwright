@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 // Components
 import Text from '../components/blocks/Text';
 import Gallery from '../components/blocks/Gallery';
-import GalleryImage from '../components/blocks/GalleryImage';
 
 // Painting data
 import { watercolourPaintingsData } from '../helperData/paintingData';
@@ -31,25 +30,7 @@ export default function watercolourPaintings() {
 				]}
 				h1={true}
 			/>
-			<Gallery
-				data={watercolourPaintingsData}
-				newPaintingHandler={newPaintingHandler}
-			/>
-			{paintingOpen ? (
-				<div
-					onClick={closePaintingHandler}
-					className="w-screen h-screen bg-black/30 fixed z-50 top-0 left-0"
-				>
-					<div>
-						<GalleryImage
-							painting={currentPainting}
-							newPaintingHandler={newPaintingHandler}
-						/>
-					</div>
-				</div>
-			) : (
-				''
-			)}
+			<Gallery data={watercolourPaintingsData} />
 		</div>
 	);
 }
