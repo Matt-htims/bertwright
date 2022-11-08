@@ -65,7 +65,7 @@ export default function Navbar() {
 				} `}
 			>
 				<nav className={`transition z-40 w-full bg-white `}>
-					<div className="max-w-screen-2xl m-auto px-4 md:px-8 flex justify-between items-center py-10 h-[68px]">
+					<div className="max-w-screen-2xl m-auto px-6 md:px-8 flex justify-between items-center py-10 h-[68px]">
 						<Link
 							href="/"
 							passHref={true}
