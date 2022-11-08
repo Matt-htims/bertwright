@@ -9,7 +9,7 @@ export default function Layout({ children }) {
 			<Popup />
 
 			<Navbar />
-			<div className="container max-w-screen-2xl m-auto px-4 md:px-8">
+			<div className="container max-w-screen-2xl m-auto px-6 md:px-8">
 				<main>{children}</main>
 
 				<Footer />
