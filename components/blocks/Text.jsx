@@ -17,8 +17,11 @@ export default function Text({ title, body, leftAligned = true, h1 = false }) {
 				</h2>
 			)}
 			<div className="body md:text-justify">
-				{body.map((text) => (
-					<p className="my-4 text-base md:text-lg leading-loose md:leading-loose">
+				{body.map((text, index) => (
+					<p
+						key={index}
+						className="my-4 text-base md:text-lg leading-loose md:leading-loose"
+					>
 						{text}
 					</p>
 				))}
