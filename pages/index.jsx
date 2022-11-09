@@ -1,8 +1,13 @@
 import Image from 'next/image';
 
+import heroImage from '../public/paintings/watercolour/richmond.png';
+import parralaxImage from '../public/paintings/watercolour/richmond.png';
+
 // Components
 import Text from '../components/blocks/Text';
 import ParallaxImage from '../components/blocks/ParallaxImage';
+
+import CustomImage from '../components/CustomImage';
 
 export default function Home() {
 	return (
@@ -15,7 +20,8 @@ export default function Home() {
 				</h1>
 				<div className="w-full relative after:absolute after:top-0 after:h-full after:w-full after:bg-black/10">
 					<Image
-						src="/paintings/richmond.png"
+						placeholder="blur"
+						src={heroImage}
 						alt="Watercolour painting of Richmond"
 						width="1556"
 						height="942"
@@ -36,7 +42,7 @@ export default function Home() {
 					'His particular interest is in marine, landscape and town subjects. He principally works outdoors in all weathers and likes to complete a painting in one sitting if possible.',
 				]}
 			/>
-			<ParallaxImage image="/paintings/richmond.png" />
+			<ParallaxImage image={parralaxImage} placeholder={true} />
 			<Text
 				title="Past President of the Royal Society of Marine Artists..."
 				body={[

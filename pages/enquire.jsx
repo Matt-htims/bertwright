@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import contactImage from '../public/paintings/watercolour/venice.png';
+
 // Icons
 import { FiPhone, FiMail } from 'react-icons/fi';
 
@@ -7,7 +9,7 @@ export default function contact() {
 	return (
 		<div className="min-h-screen mt-10 md:my-16">
 			<h1 className="mb-8 md:mb-12 leading-tight md:leading-[1.2] lg:leading-[1.2] text-5xl md:text-7xl lg:text-7xl">
-				Contact me
+				Enquiries
 			</h1>
 			<div className="border-t border-b border-tertiary py-12 lg:py-16 lg:flex justify-between">
 				<div className="left lg:w-6/12">
@@ -42,7 +44,8 @@ export default function contact() {
 				</div>
 				<div className="right lg:w-5/12">
 					<Image
-						src="/paintings/venice.png"
+						placeholder="blur"
+						src={contactImage}
 						width="1200"
 						height="500"
 						alt="Painting of Venice"

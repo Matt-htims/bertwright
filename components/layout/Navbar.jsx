@@ -17,8 +17,6 @@ export default function Navbar() {
 
 	const [onHome, setOnHome] = useState(true);
 
-	console.log(router);
-
 	useEffect(() => {
 		if (router.asPath == '/') {
 			setOnHome(true);
@@ -77,17 +75,29 @@ export default function Navbar() {
 							{checkPageAndScroll(navbarData.brand)}
 						</Link>
 						<div className="hidden lg:block space-x-12">
-							{navbarData.navLinks.map((item) => (
-								<Link
-									href={item.url}
-									key={item.id}
-									className={`text-black text-xl font-base relative transition font-main link-animation ${
-										router.pathname == item.url ? 'link-animation-active' : ''
-									}`}
-								>
-									{item.title}
-								</Link>
-							))}
+							{navbarData.navLinks.map((item) =>
+								item.buttn ? (
+									<Link
+										href={item.url}
+										key={item.id}
+										className={`px-4 transition py-2 border border-main shadow text-black hover:text-white hover:bg-main text-xl font-main ${
+											router.pathname == item.url ? '' : ''
+										}`}
+									>
+										{item.title}
+									</Link>
+								) : (
+									<Link
+										href={item.url}
+										key={item.id}
+										className={`text-black pb-1 text-xl font-normal relative transition font-main link-animation ${
+											router.pathname == item.url ? 'link-animation-active' : ''
+										}`}
+									>
+										{item.title}
+									</Link>
+								)
+							)}
 						</div>
 						<button
 							onClick={handleTray}
@@ -114,13 +124,13 @@ export default function Navbar() {
 					}`}
 				>
 					{open ? (
-						<div className="flex flex-col justify-center items-center space-y-8 md:space-y-10">
+						<div className="flex flex-col justify-center items-center space-y-10 md:space-y-14">
 							{navbarData.navLinks.map((item) => (
 								<Link
 									href={item.url}
 									key={item.id}
 									onClick={handleTray}
-									className="text-white text-3xl text-center md:text-5xl transition hover:text-black font-main"
+									className="text-white text-3xl text-center md:text-6xl pb-1 transition font-accent relative large-link-animation"
 								>
 									{item.title}
 								</Link>
