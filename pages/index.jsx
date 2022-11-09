@@ -7,8 +7,6 @@ import parralaxImage from '../public/paintings/watercolour/richmond.png';
 import Text from '../components/blocks/Text';
 import ParallaxImage from '../components/blocks/ParallaxImage';
 
-import CustomImage from '../components/CustomImage';
-
 export default function Home() {
 	return (
 		<div className="min-h-screen">
