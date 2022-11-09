@@ -11,8 +11,8 @@ export default function oilPaintings() {
 			<Text
 				title="Oil Paintings"
 				body={[
-					'I have found that watercolours need to be achieved with a degree of confidence and speed in order to capture the fleeting nature of the quality of light. Watercolours have been referred to as “a one shot medium” which accurately describes the virtual inability to make any changes to the original artwork.',
-					'I have found this a particular challenge when painting in hot desert like conditions with the paint drying rapidly on the paper, or in damp very humid conditions where the paint refuses to dry. The end results however fully justify these trials of outdoor painting. The examples shown have been painted in a wide variety of locations around the world.',
+					'My experience with oils has been the big advantage that oils have over watercolours in that they can be worked on many times to achieve the desired result. This means that the location painting can be finished off in the studio.',
+					'When painting with oils outdoors I use a drying medium that enables the painting to be touch dry in a matter of hours, this is a big asset when traveling to a number of locations. Weather conditions are more containable with oils than watercolours, particularly in damp or wet weather.',
 				]}
 				h1={true}
 			/>

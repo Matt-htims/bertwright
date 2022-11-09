@@ -17,6 +17,8 @@ export default function Navbar() {
 
 	const [onHome, setOnHome] = useState(true);
 
+	console.log(router);
+
 	useEffect(() => {
 		if (router.asPath == '/') {
 			setOnHome(true);
@@ -74,12 +76,14 @@ export default function Navbar() {
 						>
 							{checkPageAndScroll(navbarData.brand)}
 						</Link>
-						<div className="hidden lg:block space-x-8">
+						<div className="hidden lg:block space-x-12">
 							{navbarData.navLinks.map((item) => (
 								<Link
 									href={item.url}
 									key={item.id}
-									className="text-black text-xl transition hover:text-main font-main"
+									className={`text-black text-xl font-base relative transition font-main link-animation ${
+										router.pathname == item.url ? 'link-animation-active' : ''
+									}`}
 								>
 									{item.title}
 								</Link>
