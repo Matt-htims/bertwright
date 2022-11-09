@@ -41,7 +41,13 @@ export default function contact() {
 					</div>
 				</div>
 				<div className="right lg:w-5/12">
-					<Image src="/paintings/venice.png" width="1200" height="500" />
+					<Image
+						src="/paintings/venice.png"
+						width="1200"
+						height="500"
+						alt="Painting of Venice"
+						priority
+					/>
 				</div>
 			</div>
 		</div>

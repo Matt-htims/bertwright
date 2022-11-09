@@ -5,9 +5,13 @@ import GalleryImage from './GalleryImage';
 
 export default function Gallery({ data }) {
 	return (
-		<div className="md:columns-2 gap-8">
+		<div className="md:columns-2 break-inside-auto gap-8">
 			{data.map((painting, index) => (
-				<GalleryImage key={index} painting={painting} />
+				<GalleryImage
+					className="break-inside-avoid"
+					key={index}
+					painting={painting}
+				/>
 			))}
 		</div>
 	);
