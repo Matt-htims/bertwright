@@ -3,7 +3,7 @@ import Image from 'next/image';
 import contactImage from '../public/paintings/watercolour/venice.png';
 
 // Icons
-import { FiPhone, FiMail } from 'react-icons/fi';
+import { SlPhone, SlEnvolope } from 'react-icons/sl';
 
 export default function contact() {
 	return (
@@ -22,7 +22,7 @@ export default function contact() {
 							href="mailto:Bert.Wright@Virgin.Net"
 							className="group flex items-center space-x-8 w-max"
 						>
-							<FiMail
+							<SlEnvolope
 								className="transition stroke-2 group-hover:scale-125"
 								size={25}
 							/>
@@ -34,7 +34,7 @@ export default function contact() {
 							href="tel:02085677119"
 							className="group flex items-center space-x-8 w-max transition"
 						>
-							<FiPhone
+							<SlPhone
 								className="transition stroke-2 group-hover:scale-125"
 								size={25}
 							/>
