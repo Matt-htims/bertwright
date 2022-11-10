@@ -21,7 +21,7 @@ export default function Text({ title, body, leftAligned = true, h1 = false }) {
 					body.map((text, index) => (
 						<p
 							key={index}
-							className="my-4 text-base md:text-lg leading-loose md:leading-loose"
+							className="my-4 text-base md:text-xl leading-loose md:leading-loose"
 						>
 							{text}
 						</p>

@@ -74,7 +74,7 @@ export default function Navbar() {
 						>
 							{checkPageAndScroll(navbarData.brand)}
 						</Link>
-						<div className="hidden lg:block space-x-12">
+						<div className="hidden lg:block space-x-8">
 							{navbarData.navLinks.map((item) =>
 								item.buttn ? (
 									<Link
