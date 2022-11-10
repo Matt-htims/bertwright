@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@plaiceholder/next": "^2.5.0",
+    "framer-motion": "^7.6.5",
     "next": "13.0.1",
     "plaiceholder": "^2.5.0",
     "react": "18.2.0",

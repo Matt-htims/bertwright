@@ -90,7 +90,7 @@ export default function Navbar() {
 									<Link
 										href={item.url}
 										key={item.id}
-										className={`text-black pb-1 text-xl font-normal relative transition font-main link-animation ${
+										className={`text-black pb-0.5 text-xl font-normal relative transition font-main link-animation ${
 											router.pathname == item.url ? 'link-animation-active' : ''
 										}`}
 									>
