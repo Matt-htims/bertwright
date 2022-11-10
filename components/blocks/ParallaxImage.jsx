@@ -8,9 +8,9 @@ export default function ParallaxImage({ image, placeholder = false }) {
 	let ref = useRef(null);
 	let { scrollYProgress } = useScroll({
 		target: ref,
-		offset: ['end end', 'end start'],
+		offset: ['start end', 'end start'],
 	});
-	let y = useTransform(scrollYProgress, [0, 1], ['0%', '25%']);
+	let y = useTransform(scrollYProgress, [0, 1], ['0%', '15%']);
 	return (
 		<div
 			ref={ref}
