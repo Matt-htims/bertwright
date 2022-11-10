@@ -1,4 +1,4 @@
-import React from 'react';
+import BasicScroll from '../animations/BasicScroll';
 
 export default function Text({ title, body, leftAligned = true, h1 = false }) {
 	return (

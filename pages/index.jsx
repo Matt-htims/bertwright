@@ -4,6 +4,9 @@ import Head from 'next/head';
 import heroImage from '../public/paintings/watercolour/richmond.png';
 import parralaxImage from '../public/paintings/watercolour/richmond.png';
 
+// Animation
+import FadeIn from '../components/animations/FadeIn';
+
 // Components
 import Text from '../components/blocks/Text';
 import ParallaxImage from '../components/blocks/ParallaxImage';
@@ -14,11 +17,17 @@ export default function Home() {
 			<Head></Head>
 			<div className="min-h-screen">
 				<section className="intro">
-					<h1 className="text-[75px] md:text-[160px] lg:text-[130px] xl:text-[180px] font-semibold leading-[80%] z-20 absolute top-[95px] md:top-[105px] lg:top-[139px] xl:top-[70px] z-20">
-						Bert <br />
-						Wright
-					</h1>
-					<div className="w-full relative after:absolute after:top-0 after:h-full after:w-full after:bg-black/10">
+					<FadeIn
+						content={
+							<h1 className="text-[75px] md:text-[160px] lg:text-[130px] xl:text-[180px] font-semibold leading-[80%] z-20 absolute top-[95px] md:top-[105px] lg:top-[139px] xl:top-[70px] z-20">
+								Bert <br />
+								Wright
+							</h1>
+						}
+						className="z-30"
+					/>
+
+					<div className="w-full relative after:absolute after:top-0 after:h-full after:w-full after:bg-black/10 overflow-hidden">
 						<Image
 							placeholder="blur"
 							src={heroImage}
