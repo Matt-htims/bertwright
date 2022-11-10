@@ -74,7 +74,7 @@ export default function Navbar() {
 						>
 							{checkPageAndScroll(navbarData.brand)}
 						</Link>
-						<div className="hidden lg:block space-x-8">
+						<div className="hidden lg:block space-x-12">
 							{navbarData.navLinks.map((item) =>
 								item.buttn ? (
 									<Link
@@ -101,7 +101,7 @@ export default function Navbar() {
 						</div>
 						<button
 							onClick={handleTray}
-							className="flex flex-col justify-center items-center cursor-pointer text-white block lg:hidden z-50"
+							className="flex flex-col justify-center items-center cursor-pointer text-white lg:hidden z-50"
 						>
 							<div
 								className={`${hamburgerLine} mb-3.5 ${
