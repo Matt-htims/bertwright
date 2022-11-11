@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
+// Animations
+import { motion } from 'framer-motion';
+import { fadeInAnimation } from '../../Animations';
+
 // Custom hooks
 import useScrollPosition from '../../hooks/useScrollPosition';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
@@ -64,8 +68,13 @@ export default function Navbar() {
 					onHome && scrollPosition < scrollAim && !open ? 'z-20' : 'z-50'
 				} `}
 			>
-				<nav className={`transition z-40 w-full bg-white `}>
-					<div className="max-w-screen-2xl m-auto px-6 md:px-8 flex justify-between items-center py-10 h-[68px]">
+				<nav className="transition z-40 w-full bg-white">
+					<motion.div
+						variants={fadeInAnimation}
+						initial="initial"
+						whileInView="animate"
+						className="max-w-screen-2xl m-auto px-6 md:px-8 flex justify-between items-center py-10 h-[68px]"
+					>
 						<Link
 							href="/"
 							passHref={true}
@@ -114,8 +123,9 @@ export default function Navbar() {
 								}`}
 							></div>
 						</button>
-					</div>
+					</motion.div>
 				</nav>
+
 				{onHome ? <div className="h-28 md:h-60 mt-2 lg:hidden"></div> : ''}
 				<div
 					onClick={handleTray}

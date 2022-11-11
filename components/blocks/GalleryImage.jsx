@@ -1,8 +1,18 @@
 import Image from 'next/image';
 
+// Animations
+import { motion } from 'framer-motion';
+import { basicScrollAnimation } from '../../Animations';
+
 export default function GalleryImage({ painting, className }) {
 	return (
-		<div className={className}>
+		<motion.div
+			variants={basicScrollAnimation}
+			initial="initial"
+			whileInView="animate"
+			viewport={{ once: true }}
+			className={className}
+		>
 			<Image
 				src={painting.src}
 				width="1000"
@@ -15,6 +25,6 @@ export default function GalleryImage({ painting, className }) {
 				</h3>
 				<p className="text-base text-justify">{painting.description}</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

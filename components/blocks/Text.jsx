@@ -1,8 +1,13 @@
-import BasicScroll from '../animations/BasicScroll';
+// Animations
+import { motion } from 'framer-motion';
+import { basicScrollAnimation } from '../../Animations';
 
 export default function Text({ title, body, leftAligned = true, h1 = false }) {
 	return (
-		<section
+		<motion.section
+			variants={basicScrollAnimation}
+			initial="initial"
+			whileInView="animate"
 			className={`lg:w-9/12 border-t border-b border-tertiary my-10 md:my-14 py-8 md:py-12 ${
 				!leftAligned ? 'ml-auto' : ''
 			}`}
@@ -27,6 +32,6 @@ export default function Text({ title, body, leftAligned = true, h1 = false }) {
 						</p>
 					))}
 			</div>
-		</section>
+		</motion.section>
 	);
 }

@@ -5,7 +5,8 @@ import heroImage from '../public/paintings/watercolour/richmond.png';
 import parralaxImage from '../public/paintings/watercolour/richmond.png';
 
 // Animation
-import FadeIn from '../components/animations/FadeIn';
+import { motion } from 'framer-motion';
+import { basicScrollAnimation } from '../Animations';
 
 // Components
 import Text from '../components/blocks/Text';
@@ -22,7 +23,12 @@ export default function Home() {
 						Wright
 					</h1>
 
-					<div className="w-full relative after:absolute after:top-0 after:h-full after:w-full after:bg-black/10 overflow-hidden">
+					<motion.div
+						variants={basicScrollAnimation}
+						intitial="initial"
+						whileInView="animate"
+						className="w-full relative after:absolute after:top-0 after:h-full after:w-full after:bg-black/10 overflow-hidden"
+					>
 						<Image
 							placeholder="blur"
 							src={heroImage}
@@ -30,7 +36,7 @@ export default function Home() {
 							width="1556"
 							height="942"
 						/>
-					</div>
+					</motion.div>
 				</section>
 				<Text
 					title={
