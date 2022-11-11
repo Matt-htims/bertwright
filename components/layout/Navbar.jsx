@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 // Animations
-import { motion } from 'framer-motion';
-import { reverseScrollAnimation } from '../../Animations';
+import { motion, AnimatePresence } from 'framer-motion';
+import { reverseScrollAnimation, fastFadeInAnimation } from '../../Animations';
 
 // Custom hooks
 import useScrollPosition from '../../hooks/useScrollPosition';
@@ -127,29 +127,32 @@ export default function Navbar() {
 				</nav>
 
 				{onHome ? <div className="h-28 md:h-60 mt-2 lg:hidden"></div> : ''}
-				<div
-					onClick={handleTray}
-					className={`w-full h-screen bg-main flex justify-center absolute top-0 z-40 overflow-hidden ${
-						!open ? 'hidden' : ''
-					}`}
-				>
-					{open ? (
-						<div className="flex flex-col justify-center items-center space-y-10 md:space-y-14">
-							{navbarData.navLinks.map((item) => (
-								<Link
-									href={item.url}
-									key={item.id}
-									onClick={handleTray}
-									className="text-white text-3xl font-medium md:font-normal text-center md:text-6xl pb-1 transition font-accent relative large-link-animation"
-								>
-									{item.title}
-								</Link>
-							))}
-						</div>
-					) : (
-						''
+				<AnimatePresence>
+					{open && (
+						<motion.div
+							variants={fastFadeInAnimation}
+							initial="initial"
+							animate="animate"
+							viewport={{ once: true }}
+							exit={{ opacity: 0 }}
+							onClick={handleTray}
+							className={`w-full h-screen bg-main flex justify-center absolute top-0 z-40 overflow-hidden`}
+						>
+							<div className="flex flex-col justify-center items-center space-y-10 md:space-y-14">
+								{navbarData.navLinks.map((item) => (
+									<Link
+										href={item.url}
+										key={item.id}
+										onClick={handleTray}
+										className="text-white text-3xl font-medium md:font-normal text-center md:text-6xl pb-1 transition font-accent relative large-link-animation"
+									>
+										{item.title}
+									</Link>
+								))}
+							</div>
+						</motion.div>
 					)}
-				</div>
+				</AnimatePresence>
 			</header>
 		</>
 	);
