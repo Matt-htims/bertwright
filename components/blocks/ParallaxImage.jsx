@@ -19,7 +19,7 @@ export default function ParallaxImage({ image, placeholder = false }) {
 	return (
 		<div
 			ref={ref}
-			className="h-56 md:h-80 lg:h-96 relative my-10 md:my-14 overflow-hidden"
+			className="h-52 md:h-80 lg:h-96 relative my-10 md:my-14 overflow-hidden"
 		>
 			<motion.div
 				style={windowDimensions.width > 768 ? { y } : ''}
