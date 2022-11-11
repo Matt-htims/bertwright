@@ -22,7 +22,7 @@ export default function ParallaxImage({ image, placeholder = false }) {
 			className="h-56 md:h-80 lg:h-96 relative my-10 md:my-14 overflow-hidden"
 		>
 			<motion.div
-				style={windowDimensions > 768 ? { y } : ''}
+				style={windowDimensions.width > 768 ? { y } : ''}
 				className="absolute md:-top-1/2 lg:-top-3/4"
 			>
 				<Image
