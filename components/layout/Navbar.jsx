@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 // Animations
 import { motion } from 'framer-motion';
-import { fadeInAnimation } from '../../Animations';
+import { reverseScrollAnimation } from '../../Animations';
 
 // Custom hooks
 import useScrollPosition from '../../hooks/useScrollPosition';
@@ -70,7 +70,7 @@ export default function Navbar() {
 			>
 				<nav className="transition z-40 w-full bg-white">
 					<motion.div
-						variants={fadeInAnimation}
+						variants={reverseScrollAnimation}
 						initial="initial"
 						whileInView="animate"
 						className="max-w-screen-2xl m-auto px-6 md:px-8 flex justify-between items-center py-10 h-[68px]"

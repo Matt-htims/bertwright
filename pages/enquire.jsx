@@ -8,6 +8,10 @@ import CustomHead from '../components/CustomHead';
 // Icons
 import { SlPhone, SlEnvolope } from 'react-icons/sl';
 
+// Animations
+import { motion } from 'framer-motion';
+import { basicScrollAnimation } from '../Animations';
+
 export default function contact() {
 	return (
 		<>
@@ -15,7 +19,13 @@ export default function contact() {
 				title="Enquiries | Bert Wright Artist"
 				description="Enquire about Original Watercolour Paintings, Oil Paintings, Limited Edition Prints & Commissions by Artist Bert Wright."
 			/>
-			<div className="min-h-screen mt-10 md:my-16">
+			<motion.div
+				variants={basicScrollAnimation}
+				initial="initial"
+				whileInView="animate"
+				viewport={{ once: true }}
+				className="min-h-screen mt-10 md:my-16"
+			>
 				<h1 className="mb-8 md:mb-12 leading-tight md:leading-[1.2] lg:leading-[1.2] text-5xl md:text-7xl lg:text-7xl">
 					Enquiries
 				</h1>
@@ -63,7 +73,7 @@ export default function contact() {
 						/>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 }

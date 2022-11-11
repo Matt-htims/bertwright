@@ -8,6 +8,7 @@ export default function Text({ title, body, leftAligned = true, h1 = false }) {
 			variants={basicScrollAnimation}
 			initial="initial"
 			whileInView="animate"
+			viewport={{ once: true }}
 			className={`lg:w-9/12 border-t border-b border-tertiary my-10 md:my-14 py-8 md:py-12 ${
 				!leftAligned ? 'ml-auto' : ''
 			}`}
