@@ -144,7 +144,7 @@ export default function Navbar() {
 										href={item.url}
 										key={item.id}
 										onClick={handleTray}
-										className="text-white text-3xl font-medium md:font-normal text-center md:text-6xl pb-1 transition font-accent relative large-link-animation"
+										className="text-white text-3xl font-medium md:font-normal text-center md:text-6xl pb-1 transition font-accent relative"
 									>
 										{item.title}
 									</Link>
