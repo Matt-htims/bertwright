@@ -28,7 +28,7 @@ export default function Home() {
 						initial="initial"
 						whileInView="animate"
 						viewport={{ once: true }}
-						className="w-full relative after:absolute after:top-0 after:h-full after:w-full after:bg-black/10 overflow-hidden skew-y-12"
+						className="w-full relative after:absolute after:top-0 after:h-full after:w-full after:bg-black/10 overflow-hidden"
 					>
 						<Image
 							placeholder="blur"
