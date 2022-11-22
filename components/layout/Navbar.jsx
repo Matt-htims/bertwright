@@ -84,29 +84,17 @@ export default function Navbar() {
 							{checkPageAndScroll(navbarData.brand)}
 						</Link>
 						<div className="hidden lg:block space-x-12">
-							{navbarData.navLinks.map((item) =>
-								item.buttn ? (
-									<Link
-										href={item.url}
-										key={item.id}
-										className={`px-4 transition py-2 border border-main shadow text-black hover:text-white hover:bg-main text-xl font-main ${
-											router.pathname == item.url ? '' : ''
-										}`}
-									>
-										{item.title}
-									</Link>
-								) : (
-									<Link
-										href={item.url}
-										key={item.id}
-										className={`text-black pb-0.5 text-xl font-normal relative transition font-main link-animation ${
-											router.pathname == item.url ? 'link-animation-active' : ''
-										}`}
-									>
-										{item.title}
-									</Link>
-								)
-							)}
+							{navbarData.navLinks.map((item) => (
+								<Link
+									href={item.url}
+									key={item.id}
+									className={`text-black pb-0.5 text-xl font-normal relative transition font-main link-animation ${
+										router.pathname == item.url ? 'link-animation-active' : ''
+									}`}
+								>
+									{item.title}
+								</Link>
+							))}
 						</div>
 						<button
 							onClick={handleTray}
