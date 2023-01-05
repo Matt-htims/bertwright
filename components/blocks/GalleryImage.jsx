@@ -9,29 +9,31 @@ import { basicScrollAnimation } from '../../Animations';
 export default function GalleryImage({ painting, className }) {
 	const router = useRouter();
 	return (
-		<Link href={router.asPath + '/' + painting.slug}>
-			<motion.div
-				variants={basicScrollAnimation}
-				initial="initial"
-				whileInView="animate"
-				viewport={{ once: true }}
-				className={className}
-			>
-				<Image
-					src={painting.src}
-					width="1000"
-					height="1000"
-					alt={painting.title}
-				/>
-				<div className="border-b border-tertiary mb-8 lg:mb-10 space-y-2 py-4  ">
-					<h3 className="text-xl md:text-2xl font-semibold md:font-medium ">
-						{painting.title}
-					</h3>
-					<p className="text-base font-light text-justify">
-						{painting.description}
-					</p>
-				</div>
-			</motion.div>
-		</Link>
+		<div>
+			<Link href={router.asPath + '/' + painting.slug}>
+				<motion.div
+					variants={basicScrollAnimation}
+					initial="initial"
+					whileInView="animate"
+					viewport={{ once: true }}
+					className={className}
+				>
+					<Image
+						src={painting.src}
+						width="1000"
+						height="1000"
+						alt={painting.title}
+					/>
+					<div className="border-b border-tertiary mb-8 lg:mb-10 space-y-2 py-4  ">
+						<h3 className="text-xl md:text-2xl font-semibold md:font-medium ">
+							{painting.title}
+						</h3>
+						<p className="text-base font-light text-justify">
+							{painting.description}
+						</p>
+					</div>
+				</motion.div>
+			</Link>
+		</div>
 	);
 }

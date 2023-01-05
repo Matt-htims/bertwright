@@ -1,5 +1,8 @@
 import Image from 'next/image';
 
+// Components
+import IndividualPainting from '../../components/blocks/IndividualPainting';
+
 // Painting data
 import { watercolourPaintingsData } from '../../helperData/paintingData';
 
@@ -8,14 +11,7 @@ export default function WatercolourPainting({ data }) {
 	console.log(painting);
 	return (
 		<div>
-			<Image
-				src={painting.src}
-				width="1000"
-				height="1000"
-				alt={painting.title}
-			/>
-			<h1>{painting.title}</h1>
-			<p>{painting.description}</p>
+			<IndividualPainting painting={painting} />
 		</div>
 	);
 }
