@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 
 // Components
-import CustomHead from '../components/CustomHead';
-import Text from '../components/blocks/Text';
-import Gallery from '../components/blocks/Gallery';
+import CustomHead from '../../components/CustomHead';
+import Text from '../../components/blocks/Text';
+import Gallery from '../../components/blocks/Gallery';
 
 // Painting data
-import { watercolourPaintingsData } from '../helperData/paintingData';
+import { watercolourPaintingsData } from '../../helperData/paintingData';
 
 export default function watercolourPaintings() {
 	const [paintingOpen, setPaintingOpen] = useState(false);
