@@ -33,6 +33,7 @@ export default function IndividualPainting({ painting }) {
 							fill
 							alt={painting.title}
 							className="object-contain py-8"
+							priority
 						/>
 					</div>
 					<div className="text-center space-y-3 max-w-xl m-auto">
