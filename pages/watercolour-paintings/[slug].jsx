@@ -8,7 +8,6 @@ import { watercolourPaintingsData } from '../../helperData/paintingData';
 
 export default function WatercolourPainting({ data }) {
 	const painting = data[0];
-	console.log(painting);
 	return (
 		<div>
 			<IndividualPainting painting={painting} />

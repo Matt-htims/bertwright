@@ -6,7 +6,6 @@ import { FiArrowLeft } from 'react-icons/fi';
 
 export default function IndividualPainting({ painting }) {
 	const router = useRouter();
-	console.log(router.asPath, router.query.slug);
 
 	const returnLink = router.asPath.replace(router.query.slug, '');
 
