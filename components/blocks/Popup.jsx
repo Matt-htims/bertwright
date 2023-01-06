@@ -1,14 +1,19 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 // Animations
 import { motion, AnimatePresence } from 'framer-motion';
 import { fadeInAnimation } from '../../Animations';
 
 export default function Popup() {
+	const router = useRouter();
 	const [popup, setPopup] = useState(true);
 
 	const hamburgerLine = `h-0.5 rounded-full w-7 transition ease transform duration-300`;
 
+	if (router.asPath !== '/') {
+		return '';
+	}
 	return (
 		<AnimatePresence>
 			{popup && (

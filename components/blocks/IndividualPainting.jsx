@@ -2,6 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+// Animations
+import { motion } from 'framer-motion';
+import { basicScrollAnimation } from '../../Animations';
+
 import { FiArrowLeft } from 'react-icons/fi';
 
 export default function IndividualPainting({ painting }) {
@@ -16,8 +20,14 @@ export default function IndividualPainting({ painting }) {
 					<FiArrowLeft />
 					<p className="text-sm">Back to previous page</p>
 				</Link>
-				<div className="h-full border-top">
-					<div className=" h-[80%] flex center relative">
+				<motion.div
+					variants={basicScrollAnimation}
+					initial="initial"
+					whileInView="animate"
+					viewport={{ once: true }}
+					className="h-full border-top"
+				>
+					<div className="h-[65%] md:h-[80%] flex center relative">
 						<Image
 							src={painting.src}
 							fill
@@ -29,7 +39,7 @@ export default function IndividualPainting({ painting }) {
 						<h1 className="text-4xl font-medium">{painting.title}</h1>
 						<p className="text-base font-light">{painting.description}</p>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);
