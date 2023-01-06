@@ -36,6 +36,7 @@ export default function Home() {
 							alt="Watercolour painting of Richmond"
 							width="1556"
 							height="942"
+							priority
 						/>
 					</motion.div>
 				</section>
