@@ -9,7 +9,7 @@ import { basicScrollAnimation } from '../../Animations';
 export default function GalleryImage({ painting, className }) {
 	const router = useRouter();
 	return (
-		<div className="hover:scale-[1.02] transition">
+		<div className="hover:scale-[1.02] transition duration-300">
 			<Link href={router.asPath + '/' + painting.slug}>
 				<motion.div
 					variants={basicScrollAnimation}
@@ -24,7 +24,7 @@ export default function GalleryImage({ painting, className }) {
 						height="1000"
 						alt={painting.title}
 					/>
-					<div className="border-b border-tertiary mb-8 lg:mb-10 space-y-2 py-4  ">
+					<div className="border-b border-tertiary mb-8 lg:mb-10 space-y-2 py-4">
 						<h3 className="text-xl md:text-2xl font-semibold md:font-medium ">
 							{painting.title}
 						</h3>
