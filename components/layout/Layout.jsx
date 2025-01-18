@@ -6,7 +6,7 @@ import Popup from '../blocks/Popup';
 export default function Layout({ children }) {
 	return (
 		<div className="bg-white">
-			<Popup />
+			{/* <Popup /> */}
 
 			<Navbar />
 			<div className="container max-w-screen-2xl m-auto px-6 md:px-8">

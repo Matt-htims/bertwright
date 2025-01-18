@@ -27,10 +27,7 @@ export default function Popup() {
 				>
 					<div className="max-w-screen-2xl m-auto px-4 md:px-8 flex justify-between">
 						<div className="w-7"></div>
-						<p className="text-white text-center">
-							Welcome to my new site - If you wish to contact me press enquire
-							below
-						</p>
+						<p className="text-white text-center">Welcome to my new site</p>
 						<button
 							onClick={() => setPopup(false)}
 							className="flex flex-col justify-center items-center cursor-pointer text-white"

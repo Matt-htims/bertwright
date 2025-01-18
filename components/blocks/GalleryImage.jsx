@@ -25,12 +25,12 @@ export default function GalleryImage({ painting, className }) {
 						alt={painting.title}
 					/>
 					<div className="border-b border-tertiary mb-8 lg:mb-10 space-y-2 py-4">
-						<h3 className="text-xl md:text-2xl font-semibold md:font-medium ">
+						<h3 className="text-xl md:text-2xl font-normal font-main">
 							{painting.title}
 						</h3>
-						<p className="text-base font-light text-justify">
+						{/* <p className="text-base font-light text-justify">
 							{painting.description}
-						</p>
+						</p> */}
 					</div>
 				</motion.div>
 			</Link>

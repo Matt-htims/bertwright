@@ -37,8 +37,8 @@ export default function IndividualPainting({ painting }) {
 						/>
 					</div>
 					<div className="text-center space-y-3 max-w-xl m-auto">
-						<h1 className="text-4xl font-medium">{painting.title}</h1>
-						<p className="text-base font-light">{painting.description}</p>
+						<h1 className="text-4xl font-medium font-main">{painting.title}</h1>
+						{/* <p className="text-base font-light">{painting.description}</p> */}
 					</div>
 				</motion.div>
 			</div>

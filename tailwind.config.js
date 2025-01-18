@@ -6,7 +6,7 @@ const poppins = ['Poppins', 'sans serif'];
 
 // Colours
 const black = '#2B2926';
-const white = '#F8F8F8';
+const white = '#f4f1f0';
 const darkBlue = '#2A424F';
 const mediumBlue = '#195B7E';
 const grey = '#D4D4D4';

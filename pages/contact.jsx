@@ -26,8 +26,8 @@ export default function contact() {
 				viewport={{ once: true }}
 				className="min-h-screen mt-10 md:my-16"
 			>
-				<h1 className="mb-8 md:mb-12 leading-tight md:leading-[1.2] lg:leading-[1.2] text-5xl md:text-7xl lg:text-7xl">
-					Enquiries
+				<h1 className="mb-8 md:mb-12 leading-tight md:leading-[1.2] lg:leading-[1.2] text-5xl md:text-7xl lg:text-7xl font-main">
+					Contact me
 				</h1>
 				<div className="border-t border-b border-tertiary py-12 lg:py-16 lg:flex justify-between">
 					<div className="left lg:w-6/12">
@@ -37,7 +37,7 @@ export default function contact() {
 						</h2>
 						<div className="space-y-4 md:space-y-6 lg:space-y-10 mb-12 lg:mb-0">
 							<a
-								href="mailto:Bert.Wright@Virgin.Net"
+								href="mailto:bertwright82@gmail.com"
 								className="group flex items-center space-x-8 w-max"
 							>
 								<SlEnvolope
@@ -45,20 +45,18 @@ export default function contact() {
 									size={25}
 								/>
 								<p className="md:text-xl lg:text-2xl font-light">
-									Bert.Wright@Virgin.Net
+									bertwright82@gmail.com
 								</p>
 							</a>
 							<a
-								href="tel:02085677119"
+								href="tel:07803564989"
 								className="group flex items-center space-x-8 w-max transition"
 							>
 								<SlPhone
 									className="transition stroke-2 group-hover:scale-125"
 									size={25}
 								/>
-								<p className="md:text-xl lg:text-2xl font-light">
-									0208 567 7119
-								</p>
+								<p className="md:text-xl lg:text-2xl font-light">07803564989</p>
 							</a>
 						</div>
 					</div>

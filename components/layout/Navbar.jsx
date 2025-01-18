@@ -78,7 +78,7 @@ export default function Navbar() {
 						<Link
 							href="/"
 							passHref={true}
-							className="text-3xl font-accent font-bold transition"
+							className="text-3xl font-accent font-medium transition"
 							onClick={closeTray}
 						>
 							{checkPageAndScroll(navbarData.brand)}
@@ -126,13 +126,13 @@ export default function Navbar() {
 							onClick={handleTray}
 							className={`w-full h-screen bg-main flex justify-center absolute top-0 z-40 overflow-hidden`}
 						>
-							<div className="flex flex-col justify-center items-center space-y-10 md:space-y-14">
+							<div className="flex flex-col justify-center items-center space-y-8 md:space-y-12">
 								{navbarData.navLinks.map((item) => (
 									<Link
 										href={item.url}
 										key={item.id}
 										onClick={handleTray}
-										className="text-white text-3xl font-medium md:font-normal text-center md:text-6xl pb-1 transition font-accent relative"
+										className="text-white text-3xl font-normal md:font-normal text-center md:text-5xl pb-1 underline-offset-[6px] relative underline decoration-transparent hover:decoration-inherit transition-all duration-300"
 									>
 										{item.title}
 									</Link>
